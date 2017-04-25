@@ -58,5 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'activeresource', github: 'rails/activeresource'
 gem 'spree', github: 'spree/spree'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise'
-gem 'spree_shopify_importer', github: 'vfonic/spree_shopify_importer'
+gem 'spree_shopify_importer', github: 'vfonic/spree_shopify_importer', branch: 'admin'
 gem 'figaro'
+gem 'shopify_app'
