@@ -65,7 +65,7 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree_auth_devise.git
-  revision: cdd9b5f31a84ee91b28650a0321e3559faeb9655
+  revision: a5212d1922b54d83a6866fa42f38073e5e616b50
   specs:
     spree_auth_devise (3.2.0.beta)
       devise (~> 4.0.0)
@@ -74,7 +74,7 @@ GIT
 
 GIT
   remote: https://github.com/vfonic/spree_shopify_importer.git
-  revision: 55d1b169f28d43d82d920b4172e5c2593fa51c6b
+  revision: ed9513807a57114db7c45ef2ede158ed1585da3c
   branch: admin
   specs:
     spree_shopify_importer (0.1.0)
