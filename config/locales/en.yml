@@ -20,4 +20,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  errors:
+    not_implemented:
+      resources: Resource fetcher is not implemented
+      creator: Creator is not implemented
+  spree:
+    connect: 'Connect'
+    shopify_importer: 'Shopify Importer'
