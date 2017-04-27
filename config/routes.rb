@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   end
 
   mount ShopifyApp::Engine, at: "#{Spree.admin_path}/shopify-importer"
+
+  root to: :admin_shopify_importer
 end
