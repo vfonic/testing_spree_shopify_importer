@@ -15,6 +15,12 @@ module Spree
       around_action :shopify_session, only: :index
 
       def index; end
+
+      def destroy
+        SpreeShopifyImporter::Config[:shopify_domain] = nil
+        SpreeShopifyImporter::Config[:shopify_token] = nil
+        redirect_to '/admin/shopify-importer/new'
+      end
     end
   end
 end

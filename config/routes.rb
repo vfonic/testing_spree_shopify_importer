@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'admin/shopify-importer/new', to: 'spree/admin/shopify_importer#new', as: :admin_new_shopify_importer_session
   get 'admin/shopify-importer', to: 'spree/admin/shopify_importer#index', as: :admin_shopify_importer
+  match 'admin/shopify-importer', to: 'spree/admin/shopify_importer#destroy', via: :delete
 
   mount ShopifyApp::Engine, at: '/'
 end
