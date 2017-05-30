@@ -1,1 +1,7 @@
-<h1>LOL</h1>
+<% content_for :page_title do %>
+  <%= Spree.t(:shopify_importer) %>
+<% end %>
+
+Authenticated to: <%= SpreeShopifyImporter::Config[:shopify_domain] %>
+
+<%= link_to 'Delete token', "/admin/shopify-import", method: :delete, data: { confirm: 'Are you sure?' } %>
