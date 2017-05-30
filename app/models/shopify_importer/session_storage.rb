@@ -1,13 +1,13 @@
 module ShopifyImporter
   class SessionStorage
     def self.store(session)
-      Spree::Config[:shopify_domain] = session.url
-      Spree::Config[:shopify_token] = session.token
+      SpreeShopifyImporter::Config[:shopify_domain] = session.url
+      SpreeShopifyImporter::Config[:shopify_token] = session.token
     end
 
     def self.retrieve(_id = nil)
-      domain = Spree::Config[:shopify_domain]
-      token = Spree::Config[:shopify_token]
+      domain = SpreeShopifyImporter::Config[:shopify_domain]
+      token = SpreeShopifyImporter::Config[:shopify_token]
 
       return if domain.blank? || token.blank?
 
@@ -16,6 +16,6 @@ module ShopifyImporter
   end
 end
 
-# Spree::Config[:shopify_api_key]
-# Spree::Config[:shopify_password]
-# Spree::Config[:shopify_shop_domain]
+# SpreeShopifyImporter::Config[:shopify_api_key]
+# SpreeShopifyImporter::Config[:shopify_password]
+# SpreeShopifyImporter::Config[:shopify_shop_domain]

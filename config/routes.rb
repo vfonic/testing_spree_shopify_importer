@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
   mount Spree::Core::Engine, at: '/'
 
-  namespace :admin, path: Spree.admin_path do
-    get 'shopify-importer' => 'shopify_importer#index', as: :shopify_importer
-    get 'shopify-importer/new' => 'shopify_importer#new', as: :new_shopify_importer_session
-  end
+  root to: 'spree/admin/shopify_importer#index'
 
-  mount ShopifyApp::Engine, at: "#{Spree.admin_path}/shopify-importer"
+  get 'admin/shopify-importer/new', to: 'spree/admin/shopify_importer#new', as: :admin_new_shopify_importer_session
+  get 'admin/shopify-importer', to: 'spree/admin/shopify_importer#index', as: :admin_shopify_importer
 
-  root to: :admin_shopify_importer
+  mount ShopifyApp::Engine, at: '/'
 end

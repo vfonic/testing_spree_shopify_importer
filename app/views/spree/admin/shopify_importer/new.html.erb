@@ -2,7 +2,7 @@
   <%= Spree.t(:shopify_importer) %>
 <% end %>
 
-<%= form_tag admin_new_shopify_importer_session_path, method: :get do %>
+<%= form_tag '/admin/shopify-importer/new', method: :get do %>
   <div class="row">
     <div class="col-xs-6 col-md-3">
       <%= text_field_tag 'shop', nil, placeholder: 'example.myshopify.com', class: 'form-control' %>

@@ -8,8 +8,15 @@ GIT
       activesupport (>= 5.0, < 6)
 
 GIT
+  remote: https://github.com/spree-contrib/spree_static_content.git
+  revision: 1d24668273eaa3dea42a1077bae7ca4ba3f6edd7
+  specs:
+    spree_static_content (3.2.0.alpha)
+      spree_core (>= 3.1.0, < 4.0)
+
+GIT
   remote: https://github.com/spree/spree.git
-  revision: 732307e46acdc7629d02836f24b9f609b964394e
+  revision: a92e765ac66be8bafdf619f98c7dcc82da565d39
   specs:
     spree (3.3.0.beta)
       spree_api (= 3.3.0.beta)
@@ -429,6 +436,7 @@ DEPENDENCIES
   spree!
   spree_auth_devise!
   spree_shopify_importer!
+  spree_static_content!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)

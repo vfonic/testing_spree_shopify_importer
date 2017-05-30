@@ -16,7 +16,7 @@ module ShopifyImporter
           head :unauthorized
         else
           session[:return_to] = request.fullpath if request.get?
-          redirect_to admin_new_shopify_importer_session_path
+          redirect_to '/admin/shopify-importer/new'
         end
       end
     end

@@ -18,3 +18,5 @@ end
 Spree.user_class = "Spree::User"
 
 Spree::Ability.register_ability(DivineAbility)
+
+SpreeShopifyImporter::Config = Spree::ShopifyImporterConfiguration.new
