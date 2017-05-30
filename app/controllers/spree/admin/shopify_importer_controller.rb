@@ -1,7 +1,7 @@
 module Spree
   module Admin
     class ShopifyImporterController < Spree::Admin::BaseController
-      include SpreeShopifyImporter::ShopifyConcern
+      include ShopifyImporter::ShopifyConcern
 
       helper 'spree/base'
 

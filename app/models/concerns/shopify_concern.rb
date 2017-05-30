@@ -1,4 +1,4 @@
-module SpreeShopifyImporter
+module ShopifyImporter
   module ShopifyConcern
     extend ActiveSupport::Concern
 

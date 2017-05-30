@@ -11,4 +11,4 @@ ShopifyApp.configure do |config|
   config.embedded_app = true
 end
 
-ShopifyApp::SessionRepository.storage = Spree::ShopifyImporter::SessionStorage
+ShopifyApp::SessionRepository.storage = ShopifyImporter::SessionStorage
