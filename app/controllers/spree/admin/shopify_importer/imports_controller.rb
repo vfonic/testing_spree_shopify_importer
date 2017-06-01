@@ -42,7 +42,9 @@ module Spree
         def wipe_database
           conn = ActiveRecord::Base.connection
           tables = ActiveRecord::Base.connection.tables
-          tables.each { |t| conn.execute("TRUNCATE #{t}") }
+          tables.each do |t|
+            conn.execute("TRUNCATE #{t}") unless ['schema_migrations', 'ar_internal_metadata'].include?(t)
+          end
         end
 
         def create_admin_user
