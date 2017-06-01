@@ -72,7 +72,7 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree_auth_devise.git
-  revision: 20343a1d33b736dd98905e386ad6530e37e9330c
+  revision: 8a6480cb5a9a0b68566fc648520e5f3b192673dc
   specs:
     spree_auth_devise (3.2.0.beta)
       devise (~> 4.3.0)
@@ -81,7 +81,7 @@ GIT
 
 GIT
   remote: https://github.com/vfonic/spree_shopify_importer.git
-  revision: 46d1d9aaf596ee5485bdb23ebd04640cd008dd4e
+  revision: e861f6d89d9717c03d8c14b8ab427625df545d06
   branch: testing
   specs:
     spree_shopify_importer (0.1.0)
@@ -214,7 +214,7 @@ GEM
     hashie (3.5.5)
     highline (1.6.21)
     htmlentities (4.3.4)
-    i18n (0.8.1)
+    i18n (0.8.4)
     jbuilder (2.6.4)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2)
