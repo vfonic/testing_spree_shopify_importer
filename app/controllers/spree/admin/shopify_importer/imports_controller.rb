@@ -25,6 +25,9 @@ module Spree
         end
 
         def destroy
+          SpreeShopifyImporter::Config[:shopify_domain] = nil
+          SpreeShopifyImporter::Config[:shopify_token] = nil
+
           wipe_database
 
           create_admin_user
