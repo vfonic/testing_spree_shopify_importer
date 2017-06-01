@@ -2,6 +2,16 @@
   <%= Spree.t(:shopify_importer) %>
 <% end %>
 
-Authenticated to: <%= SpreeShopifyImporter::Config[:shopify_domain] %>
+<strong>Authenticated to:</strong> <%= SpreeShopifyImporter::Config[:shopify_domain] %>
 
 <%= link_to 'Delete token', "/admin/shopify-importer", method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<%= form_tag '/admin/shopify-importer/import', method: :post do %>
+  <div class="row">
+    <div class="col-xs-6 col-md-2">
+      <div class="form-actions">
+        <%= button_tag 'Start Import', class: 'btn btn-success', data: { disable_with: "#{ Spree.t(:loading) }..." } %>
+      </div>
+    </div>
+  </div>
+<% end %>
