@@ -19,6 +19,7 @@ module Spree
       def destroy
         SpreeShopifyImporter::Config[:shopify_domain] = nil
         SpreeShopifyImporter::Config[:shopify_token] = nil
+        ShopifyAPI::Base.clear_session
         redirect_to '/admin/shopify-importer/new'
       end
     end

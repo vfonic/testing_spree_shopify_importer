@@ -29,6 +29,8 @@ module Spree
 
           create_admin_user
 
+          ShopifyAPI::Base.clear_session
+
           redirect_to '/admin/shopify-importer/new'
         end
 
