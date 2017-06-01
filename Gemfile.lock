@@ -81,7 +81,7 @@ GIT
 
 GIT
   remote: https://github.com/vfonic/spree_shopify_importer.git
-  revision: e861f6d89d9717c03d8c14b8ab427625df545d06
+  revision: d3ccf97d1e2faa96a3a51bcf42e7320e8491b0f4
   branch: testing
   specs:
     spree_shopify_importer (0.1.0)
